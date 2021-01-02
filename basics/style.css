@@ -6,7 +6,9 @@
   /*  */
   /* grid-template-columns: minmax(150px, 50%) 100px; */
   /* grid-template-columns: minmax(20%, 80%) 2fr; */
-  grid-template-columns: minmax(min-content, max-content) 1fr;
+  /* grid-template-columns: minmax(min-content, max-content) 1fr; */
+
+  grid-template-columns: fit-content(300px) 1fr;
 }
 
 .container div {
