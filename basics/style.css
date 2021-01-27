@@ -11,9 +11,22 @@
   grid-template-columns: fit-content(300px) 1fr;
 }
 
-.container div {
+div {
   border: 1px solid #fff;
   background-color: aquamarine;
   padding: 0.5rem;
   text-align: justify;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 100px 1fr 100px);
+  margin: 3rem 0;
+}
+
+/* New Day | New Stuff */
+
+.fit-content {
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) fit-content(200px) 1fr; /* 2nd column will adjust its content  flexibly. If content is less then 200px, column will adjust it's width as per the content. But the column cannot grow more than 200px !!!`*/
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-auto-flow</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-auto-rows: minmax(75px, 1fr);
+        gap: 10px;
+      }
+
+      .container > div {
+        border: 1px solid #ccc;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+      <div><img src="https://picsum.photos/200" alt="nature-img" /></div>
+    </main>
+  </body>
+</html>

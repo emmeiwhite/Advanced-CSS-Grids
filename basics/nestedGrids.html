@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section-3</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        text-align: center;
+      }
+
+      .child-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0.5rem;
+      }
+      .container div {
+        border: 1px solid gray;
+      }
+
+      .main-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 50px);
+      }
+
+      .box4 {
+        /* grid-column: 1/4; */
+        grid-column-start: span 3;
+      }
+
+      .box6 {
+        grid-column-start: span 2;
+      }
+      .main-wrapper .box,
+      .main-wrapper-2 .box {
+        background-color: aqua;
+        border: 1px solid #ffffff;
+      }
+
+      .main-wrapper-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item child-container">
+        <div class="item">4.1</div>
+        <div class="item">4.2</div>
+        <div class="item">4.3</div>
+        <div class="item">4.4</div>
+      </div>
+    </div>
+
+    <section class="main-wrapper">
+      <div class="box box1">box 1</div>
+      <div class="box box2">box 2</div>
+      <div class="box box3">box 3</div>
+      <div class="box box4">box 4</div>
+      <div class="box box5">box 5</div>
+      <div class="box box6">box 6</div>
+    </section>
+
+    <section class="main-wrapper-2">
+      <div class="box">
+        box 1 ! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+        voluptatem eveniet architecto!
+      </div>
+      <div class="box">
+        box 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+        quibusdam voluptatibus, corrupti a aspernatur voluptate dolorem vitae
+        saepe cumque quia.
+      </div>
+      <div class="box">box 3</div>
+      <div class="box">box 4</div>
+      <div class="box">box 5</div>
+      <div class="box">box 6</div>
+    </section>
+  </body>
+</html>
